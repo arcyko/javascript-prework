@@ -10,7 +10,6 @@ if(randomNumber == 1){
 }   else if(randomNumber == 3){
     computerMove = 'noźyce';
 }
-
 printMessage('Mój ruch to: ' + computerMove);
 
 
@@ -25,23 +24,14 @@ if(playerInput == '1'){
 }   else if(playerInput == 3){
     playerMove = 'noźyce';
 }
-
 printMessage('Twój ruch to: ' + playerMove);
 
-
-if(computerMove == 'kamień' && playerMove == 'papier'){
+if(computerMove == 'kamień' && playerMove == 'papier' || computerMove == 'noźyce' && playerMove == 'kamień' || computerMove == 'papier' && playerMove == 'noźyce'){
     printMessage('Ty wygrywasz!');
-
-}   else if(computerMove == 'noźyce' && playerMove == 'kamień'){
-    printMessage('Ty wygrywasz!');
-
-}   else if(computerMove == 'papier' && playerMove == 'noźyce'){
-    printMessage('Ty wygrywasz!');
-
 }   else if(computerMove == playerMove){
         printMessage('Remis!');
 }   else if(playerMove == 'nieznany ruch'){
         printMessage('Błędne dane!');
-    }   else {
+}   else {
         printMessage('Przegrałeś!');
 }
