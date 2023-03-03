@@ -42,6 +42,7 @@ if(playerInput == '1'){
 
 function displayResult(argComputerMove, argPlayerMove){
     printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove + ':');
+    console.log('Ruchy graczy:', argComputerMove, argPlayerMove);
   
     if(argComputerMove == 'kamień' && argPlayerMove == 'papier' || argComputerMove == 'noźyce' && argPlayerMove == 'kamień' || argComputerMove == 'papier' && argPlayerMove == 'noźyce'){
         printMessage('Ty wygrywasz!');
