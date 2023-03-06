@@ -33,8 +33,6 @@ function playGame(playerInput){
             printMessage('Ty wygrywasz!');
         }   else if(argComputerMove == argPlayerMove){
             printMessage('Remis!');
-        }   else if(argPlayerMove == 'nieznany ruch'){
-            printMessage('Błędne dane!');
         }   else {
             printMessage('Przegrałeś!');
         }
