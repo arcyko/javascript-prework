@@ -18,7 +18,6 @@ function playGame(playerInput){
     let argComputerMove = getMoveName(randomNumber);
     printMessage('Mój ruch to: ' + argComputerMove);
 
-    /*let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');*/
     console.log('Gracz wpisał: ' + playerInput);
     let argPlayerMove = getMoveName(playerInput);
     printMessage('Twój ruch to: ' + argPlayerMove);
@@ -52,15 +51,3 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
     playGame(3);
 });
-
-/*
-function buttonClicked(){
-    printMessage('Guzik został kliknięty');
-  }
-  
-  let testButton = document.getElementById('test-button');
-  
-  testButton.addEventListener('click', buttonClicked);
-*/
-  
-
