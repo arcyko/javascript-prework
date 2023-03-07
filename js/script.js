@@ -13,12 +13,12 @@ function playGame(playerInput) {
 
   let randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('Wylosowana liczba to: ' + randomNumber);
-  let ComputerMove = getMoveName(randomNumber);
-  printMessage('Mój ruch to: ' + ComputerMove);
+  let computerMove = getMoveName(randomNumber);
+  printMessage('Mój ruch to: ' + computerMove);
 
   console.log('Gracz wpisał: ' + playerInput);
-  let PlayerMove = getMoveName(playerInput);
-  printMessage('Twój ruch to: ' + PlayerMove);
+  let playerMove = getMoveName(playerInput);
+  printMessage('Twój ruch to: ' + playerMove);
 
   function displayResult(argComputerMove, argPlayerMove) {
     printMessage(
@@ -38,7 +38,7 @@ function playGame(playerInput) {
       printMessage('Przegrałeś!');
     }
   }
-  displayResult(ComputerMove, PlayerMove);
+  displayResult(computerMove, playerMove);
 }
 
 document.getElementById('play-rock').addEventListener('click', function () {
